@@ -3,7 +3,6 @@ import random
 import numpy as np
 
 class QuadraticCost(object):
-
     @staticmethod
     def fn(a, y):
         return 0.5 * np.linalg.norm(a - y) ** 2
@@ -14,7 +13,6 @@ class QuadraticCost(object):
 
 
 class CrossEntropyCost(object):
-
     @staticmethod
     def fn(a, y):
         return np.sum(np.nan_to_num(-y * np.log(a) - (1 - y) * np.log(1 - a)))
@@ -25,7 +23,6 @@ class CrossEntropyCost(object):
 
 
 class Network(object):
-
     def __init__(self, sizes, cost=CrossEntropyCost):
         self.num_layers = len(sizes)
         self.sizes = sizes
@@ -162,7 +159,7 @@ class Network(object):
             a = self.feedforward(x)
 
             if convert: y = vectorized_result(y)
-            
+
             cost += self.cost.fn(a, y)/len(data)
             cost += 0.5 * (lmbda / len(data)) * sum(np.linalg.norm(w)**2 for w in self.weights) 
         return cost
