@@ -1,4 +1,4 @@
-"# ANN Handwritten Digit Recognition
+ANN Handwritten Digit Recognition
 
 My first time learning about neural networks. This project is a neural network using only the NumPy library for handwritten digit recognition. I used the MNIST database.
 
