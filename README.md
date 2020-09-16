@@ -1,4 +1,4 @@
-#ANN Handwritten Digit Recognition
+ANN Handwritten Digit Recognition
 
 Training a neural network for handwritten digit recognition using NumPy. Data is from MNIST database. 
 
