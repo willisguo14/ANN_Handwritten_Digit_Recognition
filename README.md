@@ -1,6 +1,6 @@
-ANN Handwritten Digit Recognition
+#ANN Handwritten Digit Recognition
 
-My first time learning about neural networks. This project is a neural network using only the NumPy library for handwritten digit recognition. I used the MNIST database.
+Training a neural network for handwritten digit recognition using NumPy. Data is from MNIST database. 
 
 - `mnist_loader.py` loads the data from MNIST file \
 - `network.py` contains all the functionality of the network (initialize weights and biases, feedforward, stochastic gradient descent, backpropagation) \
